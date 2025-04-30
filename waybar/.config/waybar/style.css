@@ -1,0 +1,72 @@
+@define-color foreground #eeeeee;
+@define-color foreground-inactive #aaaaaa;
+@define-color background #11111b;
+@define-color lavander #b4befe;
+@define-color red #f38ba8;
+@define-color sky #89dceb;
+
+
+* {
+    font-family: FiraCode Nerd Font;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: @background;
+}
+
+#workspaces button {
+    color: @foreground;
+    padding: 0 0.625rem;
+
+    border-top: 2px solid @background;
+    border-radius: 0;
+}
+
+#workspaces button.empty {
+    color: @foreground-inactive;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    border-color: @background;
+    border-top: 2px solid @sky;
+}
+
+#workspaces button.active {
+  border-top: 2px solid @lavander;
+}
+
+#worspace button.urgent {
+  border-top: 2px solid @red;
+}
+
+#memory,
+#temperature {
+  padding: 0 0.5rem;
+    /**padding-left: 1em*/
+}
+
+#wireplumber,
+#language,
+#cpu,
+#network,
+#bluetooth,
+#tray,
+#clock {
+  padding: 0 0.5rem;
+    /**padding-right: 1em */
+}
+
+#custom-media {
+  background-color: #181825;
+  padding: 0 0.75rem;
+
+  border-radius: 3px;
+  font-size: 11px;
+}
+
